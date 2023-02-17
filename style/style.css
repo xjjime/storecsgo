@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+* body {
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 90px;
+    text-align: center;
+
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+nav ul {
+    font-family: 'Unbounded', cursive;
+    font-weight: bolder;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    padding: 40px;
+    text-align: center;
+    margin: 80px 40px 80px;
+    font-size: 70px;
+}
+
+.tittlemove:hover {
+    transform: scale(1.02);
+    transition: all 500ms ease-in-out;
+}
+
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    background-color: rgb(199, 77, 77);
+
+}
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+
+
+}
+
+p {
+    font-family: 'Unbounded', cursive;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(0, 0, 0);
+    margin: 60px;
+}
+
+
+img {
+    width: 430px;
+    margin-top: 60px;
+    margin: 10px;
+    padding: 50px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: all 500ms ease-in-out;
+}
+
+.box {
+    padding: 30px;
+    transform: scale(1.05);
+    transition: all 500ms ease-in-out;
+}
+
+.Flexbox {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-left: 20%;
+}
+
+.Featured {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 50px;
+    margin: 70px;
+}
+
+
+.buy {
+    font-weight: bolder;
+    font-style: italic;
+    padding: 60px;
+    text-align: center;
+    margin: 80px 40px 80px;
+}
+
+.social {
+    font-family: 'Unbounded', cursive;
+    font-weight: bolder;
+    font-style: normal;
+    padding: 60px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+
+}
+
+
+form {
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    
+}
+
+
+.queries {
+    padding-top: 10%;
+    text-align: center;
+    height: 100px;
+    color: black;
+    /* background-color: white; */
+}
+
+.hijo button {
+    position: absolute;
+    padding: 15px;
+    background-color: rgb(225, 142, 132);
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+    width: 1220px;
+}
+
+footer {
+    background-color: rgb(179, 68, 68);
+}
+
+.button {
+    padding: 15px;
+    background-color: rgb(225, 142, 132);
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: 'Dosis', sans-serif;
+}
+
+.formcolor {
+    color: rgb(0, 0, 0);
+}
+
+.botonform {
+    padding: 15px;
+    margin: 20px;
+    background-color: rgb(165, 64, 67);
+}
+
+.spaceform {
+    margin-top: 20px;
+}
+
+.image {
+    width: 500px;
+    height: 400px;
+}
+
+.galery {
+    display: flex;
+
+}
+
+.space{
+    margin-bottom: 20px;
+}
+
+.hijo{
+
+    height: 400px;
+    background-color: rgb(253, 249, 249);
+    margin: 30px;
+}
+
+.gridPadre{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 560px;
+    background-image: url("https://www.wallpapertip.com/wmimgs/67-673278_cs-go-wallpaper-ak-47.jpg")
+
+}
+
+.hijo2 {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 900px;
+}
