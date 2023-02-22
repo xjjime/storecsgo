@@ -2,53 +2,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 
 
 * {
     margin: 0;
     padding: 0;
-
+    color: white;
 }
 
 * body {
     background-color: rgb(255, 255, 255);
+    background-image: url("../img/fondo.jpg");
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* Para gradiente gausiano (fondo borroso) */
+    backdrop-filter: blur(5px);
+    color: white;
 }
 
 header {
     top: 0;
     background-color: rgb(0, 0, 0);
-    padding: 90px;
     text-align: center;
 
 }
 
-
-ul {
-    list-style-type: none;
+.logo {
+    width: 150px;
+    height: 150px;
 }
 
-ul li {
-    display: inline-block;
+.navbar ul li a {
+    color: #ffffff;
+
+
 }
 
-nav ul {
+
+.navbar ul li a:hover {
+    color: rgb(160, 39, 39);
+    
+}
+
+.nav-item {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding-left: 100px;
+    padding-right: 100px; */
+}
+
+.navbar {
+    background-color: #ac2727;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+
+}
+
+nav ul li {
     font-family: 'Unbounded', cursive;
     font-weight: bolder;
     font-style: normal;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    background-color: #000000; 
 
 }
 
 h1 {
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
     font-weight: bolder;
     font-style: normal;
     padding: 40px;
     text-align: center;
     margin: 80px 40px 80px;
-    font-size: 70px;
+    font-size: 100px;
+    color: white;
 }
 
 .tittlemove:hover {
@@ -63,7 +96,8 @@ h2 {
     text-align: center;
     font-size: 30px;
     line-height: 60px;
-    background-color: rgb(199, 77, 77);
+    color: white;
+    background-color: rgb(160, 39, 39);
 
 }
 
@@ -72,7 +106,7 @@ h3 {
     font-weight: bolder;
     font-style: italic;
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: rgb(160, 39, 39);
 
 
 }
@@ -84,7 +118,7 @@ p {
     text-align: center;
     font-size: 20px;
     line-height: 30px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin: 60px;
 }
 
@@ -102,9 +136,12 @@ img:hover {
 }
 
 .box {
-    padding: 30px;
+    padding: 20px;
     transform: scale(1.05);
     transition: all 500ms ease-in-out;
+    background-color: rgba(0, 0, 0, 0.700);
+    margin: 20px;
+    /* justify-content: space-between; */
 }
 
 .Flexbox {
@@ -113,17 +150,17 @@ img:hover {
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    padding-left: 20%;
+    padding-left: 17%;
 }
 
 .Featured {
     flex: 2;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     flex-wrap: wrap;
     text-align: center;
     padding: 50px;
-    margin: 70px;
+    padding-left: 33%;
 }
 
 
@@ -138,12 +175,10 @@ img:hover {
 .social {
     font-family: 'Unbounded', cursive;
     font-weight: bolder;
-    font-style: normal;
-    padding: 60px;
     text-align: center;
-    color: rgb(0, 0, 0);
-
-
+    font-style: normal;
+    padding: 10px;
+    color: black
 }
 
 
@@ -152,7 +187,7 @@ form {
     font-weight: lighter;
     font-style: normal;
     font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-align: center;
 
 }
@@ -163,9 +198,15 @@ a {
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
-    
+    width: 20px;
+    height: 20px;
+}
+
+/* Conflicto con boostrap */
+*,
+::after,
+::before {
+    box-sizing: initial;
 }
 
 
@@ -173,10 +214,11 @@ a {
     padding-top: 10%;
     text-align: center;
     height: 100px;
-    color: black;
-    /* background-color: white; */
+    color: white;
+
 }
 
+/* Boton del formulario */
 .hijo button {
     position: absolute;
     padding: 15px;
@@ -184,27 +226,33 @@ a {
     border-radius: 10px;
     font-weight: 600;
     font-family: 'Dosis', sans-serif;
-    width: 1220px;
+    width: 61.6%;
 }
 
 footer {
-    background-color: rgb(179, 68, 68);
+    background-color: #a02727;
 }
 
 .button {
     padding: 15px;
-    background-color: rgb(225, 142, 132);
+    background-color: rgb(160, 39, 39);
     border-radius: 10px;
     font-weight: 600;
     font-family: 'Dosis', sans-serif;
 }
 
+.formulario input,
+.formulario textarea {
+    margin: 10px;
+    width: 30%;
+}
+
 .formcolor {
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .botonform {
-    padding: 15px;
+    padding: 10px;
     margin: 20px;
     background-color: rgb(165, 64, 67);
 }
@@ -215,35 +263,189 @@ footer {
 
 .image {
     width: 500px;
-    height: 400px;
+    height: 300px;
 }
 
-.galery {
-    display: flex;
+.galery img {
+    display: grid;
+    grid-template-columns: 1px 2px;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: auto;
+    align-items: center;
+    margin-left: 30%;
 
 }
 
-.space{
+.videoYT iframe {
+    margin-left: 9%;
+    padding: 1%;
+    width: 1500px;
+    height: 800px;
+}
+
+.space {
     margin-bottom: 20px;
 }
 
-.hijo{
+.hijo {
 
     height: 400px;
-    background-color: rgb(253, 249, 249);
+    background-color: #000000;
     margin: 30px;
 }
 
-.gridPadre{
+.gridPadre {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 560px;
     background-image: url("https://www.wallpapertip.com/wmimgs/67-673278_cs-go-wallpaper-ak-47.jpg")
-
 }
 
 .hijo2 {
     display: grid;
     grid-template-columns: 2fr;
     grid-template-rows: 900px;
+}
+
+/* mobile first - html galeria y contacto*/
+@media screen and (max-width: 500px) {
+
+    h1 {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        line-height: 5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .Featured {
+        width: 2px;
+    }
+
+    .social .icon {
+        padding: 10px;
+        text-align: center;
+        color: black;
+    }
+
+
+
+    header {
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sections {
+        padding-right: 0.5em;
+    }
+
+    .formulario input,
+    .formulario textarea {
+        margin: 20px;
+        width: 50%;
+    }
+
+    .videoYT {
+        margin-left: 9%;
+        padding: 1%;
+        width: 320px;
+        height: 320px;
+        padding-top: 20px;
+        padding-block: 80px;
+    }
+
+    .Flexbox {
+
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100px;
+
+    }
+
+    .box {
+        width: 100px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+    img {
+        width: 150px
+    }
+
+}
+
+/* dimension ipad mini - html galeria y contacto*/
+@media screen and (max-width: 768px) {
+    header {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+
+    }
+
+    .sections {
+        padding-right: 0.5em;
+
+    }
+
+    h1 {
+        font-size: 2rem;
+
+
+    }
+
+    h2 {
+        font-size: 20px;
+
+
+    }
+
+    p {
+        font-size: 20px;
+
+    }
+
+
+    .social {
+        padding: 10px;
+        text-align: center;
+        color: black;
+
+
+    }
+
+    .videoYT iframe {
+        margin-left: 9%;
+        padding: 1%;
+        width: 90%;
+        height: 90%;
+        padding-top: 20px;
+        padding-block: 80px;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin:  0 auto;
+
+    }
 }
